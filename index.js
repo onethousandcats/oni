@@ -12,11 +12,12 @@ const welcome = boxen(chalk.green("Someone somewhere is wishing for your happine
         { borderColor: 'green', padding: 1, dimBorder: true  });
 
 const config = rags
-    .setWelcome(welcome)
-    .setUsage(usage)
+    .welcome(welcome)
+    .usage(usage)
     .addCommand("init", init)
     .addCommand("add", add)
     .listCommands()
+    .help()
     .run();
 
 const currentPath = path.basename(process.cwd());
