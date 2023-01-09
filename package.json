@@ -1,0 +1,24 @@
+{
+  "name": "oni",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "sen",
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "^7.0.1",
+    "chalk": "^5.2.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "figlet": "^1.5.2",
+    "yargs": "^17.6.2"
+  },
+  "bin": {
+    "oni": "index.js"
+  }
+}
