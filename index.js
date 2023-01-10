@@ -2,8 +2,9 @@
 
 import chalk from "chalk";
 import boxen from "boxen";
-import path from "path";
 
+import { init } from "./lib/init.js";
+import { add } from "./lib/add.js";
 import { rags } from "./lib/rags.js";
 
 const usage = "usage: oni <command> [<args>]";
@@ -16,16 +17,6 @@ const config = rags
     .usage(usage)
     .addCommand("init", init)
     .addCommand("add", add)
-    .listCommands()
+    // .listCommands()
     .help()
     .run();
-
-const currentPath = path.basename(process.cwd());
-
-function init(args) {
-    console.log(`init oni directory here`);
-}
-
-function add(args) {
-    console.log(`added files to oni repo`);
-}
