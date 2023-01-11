@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [],
   "author": "sen",
@@ -18,9 +19,13 @@
     "configparser": "^0.3.10",
     "figlet": "^1.5.2",
     "oni": "^0.2.2",
+    "sha1": "^1.1.1",
     "yargs": "^17.6.2"
   },
   "bin": {
     "oni": "index.js"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
   }
 }
