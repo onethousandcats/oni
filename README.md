@@ -42,6 +42,11 @@ oni add [file]
 Add a file to be tracked in the repository
 
 ```bash
+oni cat-file [file] [object]
+```
+Print out the contents of a given file
+
+```bash
 oni snapshot [message]
 ```
 Commit staged changes as a new snapshot

@@ -1,4 +1,4 @@
-import {readObject, writeObject} from "../lib/object.js";
+import {readObject, writeObject} from "../lib/repo.js";
 import { OniBlob } from "../lib/blob.js";
 
 test('object is written correctly', () => {

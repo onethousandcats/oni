@@ -17,6 +17,7 @@ const config = rags
     .usage(usage)
     .addCommand("init", init)
     .addCommand("add", add)
+    .addCommand("cat", cat)
     // .listCommands()
     .help()
     .run();
