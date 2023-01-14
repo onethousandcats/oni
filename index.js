@@ -8,6 +8,7 @@ import { add } from "./lib/add.js";
 import { rags } from "./lib/rags.js";
 import { cat } from "./lib/cat.js";
 import { del } from "./lib/delete.js";
+import { check } from "./lib/check.js";
 
 const usage = "usage: oni <command> [<args>]";
 
@@ -21,6 +22,7 @@ const config = rags
     .addCommand("del", del)
     .addCommand("add", add)
     .addCommand("cat", cat)
+    .addCommand("check", check)
     .listCommands()
     .help()
     .run();
