@@ -6,6 +6,8 @@ import boxen from "boxen";
 import { init } from "./lib/init.js";
 import { add } from "./lib/add.js";
 import { rags } from "./lib/rags.js";
+import { cat } from "./lib/cat.js";
+import { del } from "./lib/delete.js";
 
 const usage = "usage: oni <command> [<args>]";
 
@@ -16,8 +18,9 @@ const config = rags
     .welcome(welcome)
     .usage(usage)
     .addCommand("init", init)
+    .addCommand("del", del)
     .addCommand("add", add)
     .addCommand("cat", cat)
-    // .listCommands()
+    .listCommands()
     .help()
     .run();

@@ -9,5 +9,4 @@ test('object is written correctly', () => {
 
     expect(blob.data).toBe("This is a file with data");
     expect(sha).toBe("c7c00ce2b7b697fd073fbd21993901a939981d14");
-
 });

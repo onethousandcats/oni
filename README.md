@@ -42,7 +42,7 @@ oni add [file]
 Add a file to be tracked in the repository
 
 ```bash
-oni cat-file [file] [object]
+oni cat [file] [object]
 ```
 Print out the contents of a given file
 
